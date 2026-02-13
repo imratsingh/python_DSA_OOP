@@ -331,3 +331,128 @@
 
 
 # print("Your total scores are",points)
+
+# ----------------------------------------------------------------------------------------------------
+
+# remove duplicate from list
+# li = [1,2,1,2,4,12,32,2,411,21,21,31]
+# li = set(li)
+# li = list(li)
+# print(li)
+
+
+# set
+# {}
+# unique
+# unordered
+# indexing not allowed
+# mutable
+# data = {1,13,15,73,15,5}
+# print(data[0])
+# print(type(data))
+
+
+# data1 = {10,80,60,40}
+# data2 = {20,80,10,90}
+
+# set mathematic fubction
+# union    # return all value of add duplicate value single time
+# data1 = data1.union(data2)
+# print(data1)
+# intersection     # return common value
+# data1 = data1.intersection(data2)
+# print(data1)
+# difference  # which persent in x but not in y
+# data1 = data1.difference(data2)
+# print(data1)
+# symmentic_dufference  # only return unique values
+# data1 = data1.symmetric_difference(data2)
+# print(data1)
+
+
+# to add data in a set
+# data.add(100)
+# data.update({1,3,6,43,3})    # iterable object
+
+# to remove element from a set
+# data.pop()
+# data.remove(89)
+# data.discard(89)
+# data.clear()
+# del data
+
+# print(data)
+#---------------------------------------------dictionary ---------------------------------------
+
+# dictionary  {}
+# key-value pair
+# key -> unique
+# value -> can be duplicate
+# heterogenonus
+# indexing not allowed
+
+# data = {}
+# data = dict()
+# print(type(data))
+
+# data ={
+#     "name":"raj",
+#     "rollno":10101,
+#     1012 : 200,
+#     "course":["python","numpy","pandas"]
+# }
+
+# print(data.get("age","value does not exist"))
+# print(data["age"])
+
+# print(data.keys())
+# print(data.values())
+# print(data.items())
+
+# print(len(data))
+# print(max(data))
+# print(min(data))
+
+# to remove element from a dictionary
+# data.pop("name")
+# data.popitem()
+# data.clear()
+# del data
+
+
+
+# to add key-value pair in dictionary
+# data.setdefault("age",24)
+# data.update({"age":12,"fees":50000})
+
+# print(data["name"])
+# print(data["course"])
+
+
+# to add key-value pair in dictionary
+# variable_name[key] = value
+# data["age"]=24        # new key value pair add    
+# data[1012] += 300     # update value
+# data["name"] = "rahul"   #  override value
+
+
+
+# count the frequency of an element in a list
+#li = [1,2,1,2,1,2,2]
+#1:3   2:4
+
+li = [1,1,2,1]
+data = {}
+print(data)
+
+data[li[0]] = data.get(li[0],0)+1
+print(data)
+
+data[li[1]] = data.get(li[1],0)+1
+print(data)
+
+data[li[2]] = data.get(li[2],0)+1
+print(data)
+
+data[li[3]] = data.get(li[3],0)+1
+print(data)

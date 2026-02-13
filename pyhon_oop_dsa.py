@@ -306,7 +306,180 @@
 # else:
 #     print("Not a palindrome :")
 
-# dixnary
+#------------------------------dixnary---------------------------
+# dictionaries are used to store data values in key:value pairs they are unorderd mutable and changeable dont allow duplicate keys
+
+# dict = {
+#     "name": "imrat singh",
+#     "subjects": ["python","SQL"],
+#     "topics" : ("dict","set"),
+#     "age" : 34,
+#     "is_adult": True,
+#     23 : 56 
+# }
+# print(type(dict))
+# print(dict["name"])
+# print(dict["age"])
+# print(dict["topics"])
+
+# dict["name"] = "imrat singh lodhi"
+# dict["marks"] = 77
+
+# print(dict)
+
+# # i wont a null dictionaries
+# null_dict = {}
+# null_dict["name"] = "imrat singh"
+# print(null_dict)
+
+# # nested dictionary
+# student = {
+#     "name": "rahul kumar",
+#     "subject":{
+#         "phy":34,
+#         "chem":67,
+#         "math":89
+#     }
+# }
+# print(student)
+
+# dictionary methods 
+# (1) .keys() # return all keys 
+# (2) .values() # return all values
+# (3) .items() # return all key , values pairs as tuple
+# (4) .get("key") # return the key accoeding to value
+# (5) .update(new dict) # insert the specified items to the dictionary
+
+# info_student ={
+#     "name" : "imrat singh",
+#     "age" : 45,
+#     "rol_no" : 34564576,
+#     "subject":{"phy":34,"chem":56}
+# }
+# new_dict = {"mob":4564674578}
+# print(info_student.keys())
+# print(info_student.values())
+# print(len(list(info_student.keys())))
+# print(info_student.items())
+# print(info_student.get("age"))
+# print(info_student.update(new_dict))
+# print(info_student)
+
+# Practices Question 
+#(1).Write a program to create a dictionary with 5 key–value pairs and print it.
+# dict = {
+#     "name":"imrat singh",
+#     "age":45,
+#     "village":"damoh",
+#     "state":"mp",
+#     "mo.":345346
+# }
+# print(dict)
+#(2).Write a program to access the value of a given key from a dictionary.
+# dict = {
+#     "name":"imrat singh",
+#     "age":45
+# }
+# print(dict["name"])
+#(3).Write a program to add a new key-value pair to an existing dictionary.
+# dict = {
+#     "name":"imrat singh",
+#     "age":45
+# }
+# new_dict = {"Mo.":3452341324}
+# dict.update(new_dict)
+# print(dict)
+
+#(4).Write a program to update the value of an existing key in a dictionary.
+# dict = {
+#     "name" : "imrat singh",
+#     "age":45
+# }
+# dict["name"] = "imrat singh lodhi"
+# print(dict)
+#(5)Write a program to delete a key-value pair from a dictionary.
+# dict = {
+#     "college":"sgsu",
+#     "student":"imrat singh",
+#     "age":45
+# }
+# del dict["age"]
+# print(dict)
 
 
+# -------------------------------------------    set     ----------------------------------------
+# set is the collection of the unordered items each element in the set must be unique and immutable
+# collection = {2,4,6,5,5,"hellow","hellow"}
+# print(collection)
+# print(type(collection))
+# print(len(collection))
 
+#-------> how to creat empty set
+# collection = set()
+# print(type(collection))
+#-------> set methods
+# set.add(el) add an element
+# set.remove(el) remove the element
+# set.clear() empties the set
+# set.pop() removes a random value
+# set.union()
+#set.intersection()
+
+# collection = set()
+# collection.add(1)
+# collection.add(2)
+# collection.add(4)
+# collection.add(6)
+# print(collection)
+
+# collection.remove(1)
+# print(collection)
+
+# collection.pop()
+# print(collection)
+
+# collection.clear()
+# print(collection)
+
+# set1 ={1,2,3}
+# set2 = {2,3,4,5}
+# print(set1.union(set2))
+
+# set1 = {1,2,3,4,5}
+# set2 = {2,3,4,5,6}
+# print(set1.intersection(set2))
+
+# --------------practices Question---------
+# (1)Write a program to create a set with 5 elements and print it.
+# set = {1,2,3,4,5}
+# print(type(set))
+# print(set)
+# (2)Write a program to add an element to an existing set.
+# set = {12,23,54,45}
+# set.add(9)
+# set.add(20)
+# set.add(60)
+# print(set)
+# (3)Write a program to remove an element from a set.
+# set = {1,2,"imrat singh",56,"thakur"}
+# set.remove(56)
+# print(set)
+# (4)Write a program to check whether an element exists in a set.
+# set = {1,2,3,4,56,6}
+# element = int(input("Enter your element :"))
+# if element in set:
+#     print("Element is exists :")
+# else:
+#     print("not exists :")
+#(5) Write a program to find the union of two sets.
+# set1 = {1,2,3,4}
+# set2 = {4,3,5,6}
+# print(set1.union(set2))
+#(6) Write a program to find the intersection of two sets.
+# set1 = {"imrat","singh","lodhi",1,2,3}
+# set2 = {"imrat","singh",2}
+# print(set1.intersection(set2))
+#(7) Write a program to find the difference between two sets.
+# set1 = {1,2,3,4,5}
+# set2 = {2,3,4,5,6}
+# print(set1.difference(set2))
