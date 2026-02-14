@@ -483,3 +483,310 @@
 # set1 = {1,2,3,4,5}
 # set2 = {2,3,4,5,6}
 # print(set1.difference(set2))
+
+
+
+# --------------------------- Loop in Python ----------------------------
+# ------> loops are used to repeat instruction it is two types (1) while and (2) for loop
+
+# count =1
+# while count <=5:
+#     print("hello")
+#     count = count + 1
+
+# i =1 
+# while i<=5:
+#     print(i)
+#     i += 1
+
+# Easy Level (Basics)
+
+# Write a program to print numbers from 1 to 10 using a while loop.
+# i = 1 
+# while i <= 10:
+#     print(i)
+#     i += 1
+
+# Print all even numbers between 1 and 20 using a while loop.
+# i = 1 
+# while i <= 20:
+#     if (i % 2 == 0):
+#         print(i)
+#     i += 1
+# Print all odd numbers between 1 and 20 using a while loop.
+# i = 1 
+# while i <= 20:
+#     if (i % 2 != 0):
+#         print(i)
+#     i += 1
+# Write a program to print numbers from 10 to 1 (reverse order) using a while loop.
+# i = 10
+# while i >= 1:
+#     print(i)
+#     i -= 1
+
+# Print the multiplication table of a number entered by the user using a while loop.
+# num = int(input("Enter your number for table :"))
+# count = 1
+# while count <= 10:
+#     print(num *count)
+#     count +=1
+
+
+
+# Medium Level (Logic Building)
+
+# Write a program to find the sum of first N natural numbers using a while loop.
+
+# n = int(input("Etner your number N :"))
+# i = 1
+# sum = 0 
+# while i <= n:
+#     sum = sum + i
+#     i += 1
+# print("it is the sum of all natural number :",sum)
+
+# Write a program to reverse a given number using a while loop.
+# num= int(input("Enter your num :"))
+# count = 0
+
+# if (num == 0):
+#     count +=1
+# else:
+#     while num != 0:
+#         num = num // 10
+#         count +=1
+# print(count)
+# Write a program to find the factorial of a number using a while loop.
+# num = int(input("Enter your num :"))
+# fact = 1
+# while num > 0:
+#      fact = fact * num
+#      num -= 1
+# print(fact)
+# Write a program to print all numbers divisible by 5 between 1 and 100 using a while loop.
+# num = 1
+# while num <= 100:
+#     if (num % 5 == 0):
+#         print(num)
+#     num +=1
+
+#  intermidiate lable
+
+# Write a program to check whether a number is a palindrome using a while loop.
+# num = int(input("Enter your number :"))
+# orignal = num
+# reverse = 0 
+# while num > 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num = num // 10
+# if (orignal == reverse):
+#     print("the number is palindrom :")
+# else:
+#     print("the number is not a palindrom :")
+
+# Write a program to find the sum of digits of a given number using a while loop.
+# num = int(input("Enter your number : "))
+# sum_digit = 0 
+# while num > 0 :
+#     digit = num % 10
+#     sum_digit = sum_digit + digit
+#     num = num // 10 
+# print("it is the sum of all digit :",sum_digit)
+# Write a program to find the largest digit in a given number using a while loop.
+# num = int(input("Enter your number :"))
+# larger = 0 
+# while num > 0:
+#     digit = num % 10
+#     if (digit > larger):
+#         larger = digit
+#     num = num // 10 
+# print("it is the largest number : ",larger)
+# Write a program to keep taking numbers from the user until the user enters 0, then print the total sum.
+# total = 0
+# while True:
+#     num = int(input("Enter your number untill(not enter zero) :"))
+
+#     if(num == 0):
+#         break
+#     total = total + num
+# print("it sum all the number entered : ",total)
+# Write a program to print Fibonacci series up to N terms using a while loop.
+# num = int(input("Etner your number :"))
+# a = 0
+# b = 1
+# count = 0
+# while count < num:
+#     print(a,end=" ")
+#     c = a + b
+#     a = b 
+#     b = c
+#     count +=1
+
+
+# -------------->>>>  Tricky / Thinking Questions
+
+# Write a program to keep asking the user for a password until the correct password is entered (use while).
+# correct_password = "imrat@123"
+# password = ""
+# while password != correct_password:
+#     password = input("Enter your password :")
+# print("password is match : ",password)
+
+
+# Write a program to simulate an ATM menu using a while loop (Withdraw, Deposit, Exit).
+
+# balence = 1000
+# while True:
+#     print("<------this is the menu ATM --->")
+#     print(" (1). withdraw :")
+#     print(" (2).deposit ")
+#     print(" (3). exit ")
+
+#     choice = int(input("Etner your number :"))
+
+#     if(choice == 1):
+#         amount = int(input("Etner your amount :"))
+#         if (amount <= balence):
+#             balence -= amount
+#             print("please collect your case :")
+#             print("your aviable balence :",balence)
+#         else:
+#             print("insuficent balence :")
+#     elif(choice == 2):
+#         amount = int(input("Enter your balence :"))
+#         balence = balence + amount
+#         print("your balence is : ",balence)
+    
+#     elif(choice == 3):
+#         print("thank you for using ATM :")
+#         break
+#     else:
+#         print("you are Enter invalid number :")
+
+# Q. print all the element in the list 
+# list = [23,45,2,4,6,8,6,4,9,67]
+# index = 0
+# while index < len(list):
+#     print(list[index])
+#     index +=1
+
+# list = ["imrat","singh","loshi","thakur","imrat2"]
+# index = 0
+# while index <len(list):
+#     print(list[index])
+#     index += 1
+
+# Q. search for a number x in the tuple using while loop
+# nums = (1,4,6,3,5,7,8,9)
+# x = 8
+# i = 0
+# while i <len(nums):
+#     if(nums[i] == x):
+#         print("found at idn",i)
+#         break
+#     else:
+#         print("finding :")
+#     i +=1
+
+# Q. we all 5 num accept 3
+# i = 0
+# while i<=5:
+#     if(i == 3):
+#         i +=1
+#         continue
+#     print(i)
+#     i +=1
+
+# <---------------------------- For loop ------------------------>
+#----> loops are used for sequential traversal. for traversing list,string,tuple etc
+# str = "imratsingh"
+# for char in str:
+#     print(char)
+# print the element of the followwing list using a loop
+
+# list = [1,2,3,56,88,65,44,33]
+# for char in list:
+#     print(char)
+
+#-------------- Easy Level (Basics)----------------
+
+# Print numbers from 1 to 10 using a for loop.
+# for char in range(1,11):
+#     print(char)
+# Print all even numbers between 1 and 20 using a for loop.
+# for char in range(1,20):
+#     if(char % 2 == 0):
+#         print("even number :",char)
+    
+# Print all odd numbers between 1 and 20 using a for loop.
+# for char in range(1,20):
+#     if(char % 2 != 0):
+#         print("odd number :",char)
+# Print numbers from 10 to 1 using a for loop.
+# for char in range(10,0,-1):
+#     print(char)
+# Print the multiplication table of a given number
+# num = int(input("Enter your number :"))
+# for char in range(1,11):
+#     print(char * num)
+
+# ---------------------Medium Level (Logic Building)----------------------
+
+# Find the sum of first N natural numbers using a loop.
+# n = int(input("Enter your number n:"))
+# sum =0
+# for i in range(1,n+1):
+#     sum = sum + i
+# print("it is the sum :",sum)
+# Count the number of elements in a list using a loop.
+# list = [1,2,6,5,4,32]
+# count = 0
+# for char in list:
+#     count +=1
+# print(count)
+# Find the largest number in a list using a loop.
+# list = [1,2,3,4,5,6,7]
+# larger = 0
+# for char in list:
+#     if (char > larger):
+#         larger = char
+# print(larger)
+# Find the smallest number in a list using a loop.
+# list = [9,4,2,3,4,5,6,1]
+# smallest = list[0]
+# for num in list:
+#     if (num < smallest):
+#         smallest = num
+# print(smallest)
+# Print all numbers divisible by 5 between 1 and 100
+
+# for num in range(1,100):
+#     if(num % 5 == 0):
+#         print(num)
+
+#--------------------------------Intermediate Level-------------------
+
+# Print each character of a string using a loop.
+# str = "imratsingh"
+# for char in str:
+#     print(char)
+
+# Reverse a string using a loop.
+str = "imratsinghlodhi"
+reverse = ""
+for char in str:
+    reverse = char + reverse
+print(reverse)
+# Reverse a number using a loop.
+num = int(input("Enter your number :"))
+reverse = 0
+for i in num >0:
+    digit = num % 10
+    reverse  = reverse * 10 + digit
+    num = num // 10
+print(reverse)
+# Count the number of vowels in a string.
+
+# Check whether a number is prime using a loop.
