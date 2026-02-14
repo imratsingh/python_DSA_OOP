@@ -774,19 +774,76 @@
 #     print(char)
 
 # Reverse a string using a loop.
-str = "imratsinghlodhi"
-reverse = ""
-for char in str:
-    reverse = char + reverse
-print(reverse)
+# str = "imratsinghlodhi"
+# reverse = ""
+# for char in str:
+#     reverse = char + reverse
+# print(reverse)
 # Reverse a number using a loop.
-num = int(input("Enter your number :"))
-reverse = 0
-for i in num >0:
-    digit = num % 10
-    reverse  = reverse * 10 + digit
-    num = num // 10
-print(reverse)
+# num = int(input("Enter your number :"))
+# reverse = 0
+# for i in num >0:
+#     digit = num % 10
+#     reverse  = reverse * 10 + digit
+#     num = num // 10
+# print(reverse)
 # Count the number of vowels in a string.
+# str = "imratsinghii"
+# count = 0
+# for char in str:
+#     if(char == "a" or char == "e" or char == "i" or char == "o" or char == "u"):
+#         count +=1
+# print(count)
 
 # Check whether a number is prime using a loop.
+# num = int(input("Enter your number :"))
+# if (num <= 1):
+#     print("not a prime number :")
+# else:
+#     is_prime = True
+#     for char in range(2,num):
+#         if (num % char == 0):
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print("prime number :")
+#     else:
+#         print("not a prime number :")
+
+#----------------------- Advanced / Thinking Questions----------------------------
+
+# Print the Fibonacci series up to N terms using a loop.
+# num = int(input("Enter your number :"))
+# a = 0
+# b = 1
+# for char in range(num):
+#     print(a,end=" ")
+#     c = a + b
+#     a = b 
+#     b = c
+
+# Find the factorial of a number using a loop.
+# num = int(input("Enter your number :"))
+# factorial = 1 
+# for i in range(1,num+1):
+#     factorial = factorial * i
+# print("it is the factorial : " , num , " = ", factorial)
+# Check whether a number is palindrome using a loop.
+# num = input("Enter your number :")
+# reverse = ""
+# for char in num:
+#     reverse = char + reverse
+
+# if (num == reverse):
+#     print("its a palindrom :")
+# else:
+#     print("its not a palindrom :")
+
+# Find the sum of digits of a number using a loop.
+num = input("Enter your number : ")
+sum = 0
+for i in num:
+    sum = sum + int(i)
+
+print(sum)
+
