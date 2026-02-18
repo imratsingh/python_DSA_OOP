@@ -441,18 +441,63 @@
 #li = [1,2,1,2,1,2,2]
 #1:3   2:4
 
-li = [1,1,2,1]
-data = {}
-print(data)
+# li = [1,1,2,1]
+# data = {}
+# print(data)
 
-data[li[0]] = data.get(li[0],0)+1
-print(data)
+# data[li[0]] = data.get(li[0],0)+1
+# print(data)
 
-data[li[1]] = data.get(li[1],0)+1
-print(data)
+# data[li[1]] = data.get(li[1],0)+1
+# print(data)
 
-data[li[2]] = data.get(li[2],0)+1
-print(data)
+# data[li[2]] = data.get(li[2],0)+1
+# print(data)
 
-data[li[3]] = data.get(li[3],0)+1
-print(data)
+# data[li[3]] = data.get(li[3],0)+1
+# print(data)
+
+
+# -------------------------------------------------- if else ----------------------
+
+
+# n = int(input("Enter your number :"))
+# if n:
+#     print("give val is :{n}")
+# else:
+#     print("Empty data :")
+
+# n =input("Enter your values :")
+# print(n)
+# print(type(n))
+# x = list(n)
+# print(x)
+# print(type(x))
+
+# n = int(input("Enter your number :"))
+# if(n>0):
+#     print("it is the posivite number :")
+# elif(n<0):
+#     print("it is negative number :")
+# else:
+#     print("it is not a number :")
+
+num1 = int(input("Enter your number 1 :"))
+num2 = int(input("Etner your number 2 :"))
+num3 = int(input("Enter your number 3 :"))
+if(num1 > num2 and num1 > num3):
+     print("num1 is grater :",num1)
+elif(num2 > num1 and num2 > num3):
+     print("num2 is grater :",num2)
+else:
+     print("num3 is grater :",num3)
+
+# n = int(input("Enter your values :"))
+# if (n % 2 == 0):
+#     print("even number :",n)
+# else:
+#     print("odd number :",n)
+
+# n = int(input("Etner your numebr :"))
+# if(n % 2 != 0):
+#     print("odd number :",n)

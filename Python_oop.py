@@ -186,12 +186,115 @@
 #class is a blue print 
 # object is a real world entity 
 
-class car:
-    color = "blue"
-    brand = "merch"
-car1 = car()
-print(car1.color)
+# class car:
+#     color = "blue"
+#     brand = "merch"
+# car1 = car()
+# print(car1.color)
  
+# -----------------------  __init__ function ------------------------
+# constructor
+# all classses have a function called __init__(),which is always executed when the object is being initiated
+# creating class
+# class student:
+#     def __init__(self,fullname):
+#         self.name = fullname
+
+# creating object
+# s1 = student("karan")
+# print(s1.name)
+
+# * the self parameter is a reference to the current instance of the class and is ued to access variables that belongs to the class
+# class student:
+
+#     def __init__(self,fullname):
+#         self.name = fullname
+#         print("adding new student in database :")
+
+# s1 = student("imrat singh")
+# print(s1.name)
+
+# s2 = student("imrat")
+# print(s2.name)
+
+# class student:
+
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+#         print("adding name and marks:")
+
+# s1 = student("imrat singh",67)
+# print(s1.name,s1.marks)
+
+# s2 = student("imrat singh lodhi :",90)
+# print(s2.name,s2.marks)
+
+# --------------> class and object attribute
+# class attrubute = if any thing is same then we can class attribute outherbise we can obejcet attribute
+# class student:
+#     college_name = "scope college of gengineering :"
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+#         print("adding new student in database :")
+
+# s1 = student("karan",78)
+# print(s1.name,s1.marks)
+
+# s2 = student("imrat",90)
+# print(s2.name,s2.marks)
+
+# print(s2.college_name)
+
+# Q. create student class that takes name and marks of 3 subjects as arguments in constructor then create a method to print the average.
+
+# class student:
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+    
+#     def get_avg(self):
+#         sum = 0 
+#         for val in self.marks:
+#             sum += val
+#         print("hiii",self.name,"your avg score is :",sum/3)
+
+# s1 = student("imrat singh",[89,35,46])
+# s1.get_avg()
+
+# ----------- static method --------------
+# static method that dont use the self parameter (it work at class level)
+# class student:
+#     @staticmethod
+#     def college():
+#         print("sgsu college bhopal :")
+    
+# s1 = student()
+# s1.college()
+
+# ------------ importent topics ------------
+# oop is four man pillers abstraction encapsulation inheritence polymorfhims
+
+# ----> Abstruction 
+# hiding the implementation details of a class and only showing the essential feature to the user
+
+class car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.cluch = False
+
+    def start(self):
+        self.acc = True
+        self.cluch = True
+        print("car is start :")
+s1 = car()
+s1.start()
+
+
+
+
 
 
 
