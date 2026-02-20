@@ -199,3 +199,222 @@
 # print(np.log(a))
 
 # ---------------------------------------- 2 D Array ------------------------------------------
+# import numpy as np
+# a = np.array([[1,2,3,4],[6,7,8,9]])
+# print(a)
+# print(type(a))
+# print(a.shape)
+# print(a.ndim)
+
+#----> zero = np.zeros() # it is give values in decimal so we can convret into the int
+# import numpy as np
+# a = np.zeros((2,3))
+# print(a)
+# print(a.shape)
+# print(a.ndim)
+# print(type(a))
+
+# import numpy as np
+# a = np.zeros((2,3),dtype=int)
+# print(a)
+# print(type(a))
+# print(a.ndim)
+# print(a.shape)
+
+# ------> ones = np.ones() it is also give value in the form of decimal
+# import numpy as np
+# a = np.ones((2,3),dtype=int)
+# print(a)
+# print(type(a))
+# print(a.shape)
+# print(a.ndim)
+
+# ------> identity metrix = np.eye()
+# import numpy as np
+# a = np.eye(3,3)
+# print(a)
+# print(type(a))
+# print(a.shape)
+# print(a.ndim)
+
+# -----> diagonal metrix = np.diag()
+# import numpy as np
+# a = np.diag([1,2,3,4])
+# print(a)
+# print(type(a))
+# print(a.ndim)
+# print(a.shape)
+
+
+# ---------------> indexing of 2D array
+# all the columns in row start by 0 by default
+# import numpy as np
+# a = np.array([[1,2,3,4],[6,7,8,9],[9,8,7,6]])
+# print(a)
+# print(type(a))
+# print(a.shape)
+# print(a.ndim)
+# print(a[0])
+# print(a[1:3])
+
+# ----> assigning the values in 2D array
+# import numpy as np
+# a = np.array([[1,2,3,4],[5,6,7,8],[12,23,34,45]])
+# print(a)
+# a[1] = [23,34,45,47]
+# print(a)
+# a[0,3] = 500
+# print(a)
+
+#-------------------> flattening
+# ----> Flattening in NumPy is the process of converting a multi-dimensional array into a one-dimensional array.
+# import numpy as np
+# a = np.array([[2,3,4,5],[6,7,8,9]])
+# print(a)
+# print(a.shape)
+# print(a.ndim)
+# print(type(a))
+
+# b = a.ravel()
+# print(b)
+# print(b.shape)
+# print(b.ndim)
+# print(type(b))
+
+# -----> reshape() is used to change the shape of a NumPy array without changing its data.
+# import numpy as np
+# a = np.array([1,2,3,4])
+# print(a)
+# print(a.shape)
+# print(a.ndim)
+# print(type(a))
+
+# a1 = a.reshape(2,2)
+# print(a1)
+# print(type(a1))
+# print(a1.shape)
+# print(a1.ndim)
+
+
+#----> a.T returns the transpose of array a by swapping rows and columns.
+# import numpy as np
+# a = np.array([[1,2,3,4],[5,6,7,8]])
+# print(a)
+# print(a.shape)
+# print(a.ndim)
+# print(type(a))
+
+# b = a.T
+# print(b)
+# print(b.shape)
+# print(b.ndim)
+# print(type(b))
+
+# -----> sort array
+# sorting along an axis : axis = 1---row and axis = 0 ---columns
+# import numpy as np
+# a = np.array([[1,2,1],[4,5,3],[7,8,2]])
+# b = np.sort(a,axis=1)
+# print(b.shape)
+# print(b.ndim)
+# print(b)
+# print(a)
+
+# import numpy as np
+# a = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# print(a)
+# print(a.shape)
+# print(a.ndim)
+# b = np.sort(a,axis=0)
+# print(b)
+# print(b.shape)
+# print(b.ndim)
+
+# ---> adding two array
+# import numpy as np
+# a = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# b = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# print(a+b)
+
+# import numpy as np
+# a = np.array([[1,2,3],[4,5,6]])
+# b = np.array([[1,2,3],[4,5,6]])
+# print(a + b)
+
+# ----> mutmul = np.matmul() works by multiplying rows of the first matrix with columns of the second matrix and summing the results.
+# import numpy as np
+# a = np.array([[1,2],[5,6]])
+# b = np.array([[1,2],[5,6]])
+# c = np.matmul(a,b)
+# print(c)
+
+
+# concatinate = np.concatenate() is used to join two or more NumPy arrays into a single array along a specified axis.
+
+# import numpy as np
+# a = np.array([[1,2,3],[5,6,7],[7,8,9]])
+# b = np.array([[4,5,6],[6,7,8],[2,8,5]])
+# c = np.concatenate((a,b),axis=0)
+# print(c)
+
+# import numpy as np
+# a = np.array([[1,2],[5,6]])
+# b = np.array([[4,5],[6,7]])
+# c = np.concatenate((a,b),axis=1)
+# print(np.concatenate((a,b),axis=0))
+# print(c)
+
+
+# =========================================  Pandas ==============================================
+
+# Pandas is a Python library used for data manipulation and analysis using Series and DataFrame
+# Main Data Structures in Pandas
+# Series → 1D data (single column)
+# DataFrame → 2D data (rows + columns, like Excel)
+
+# ----------------> Series = Single column of data with index
+# import pandas as pd
+# s = pd.Series([1,2,3,4,5,6])
+# print(s)
+
+# import pandas as pd
+# s = pd.Series(["a","b","c","d","e"])
+# print(s)
+
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(np.random.randint(5),index = ['a','b','c','d','e'])
+# print(s)
+
+
+# import numpy as np
+# import pandas as pd
+# dictonary = {'a':1,'b':2,'c':3,'d':4}
+# s = pd.Series(dictonary)
+# print(s)
+
+# import pandas as pd
+# import numpy as np
+# dict = {'a':1,'b':2,'c':3,'d':4,'e':5}
+# s1 = pd.Series(dict)
+# print(s1)
+# array = [1,2,3,4,5]
+# s2 = pd.Series(array)
+# print(s2)
+
+# import pandas as pd
+# import numpy as np
+# dict = {'a':1,'b':2,'c':3,'d':4,'e':5}
+# s1 = pd.Series(dict)
+# print(s1)
+# print(s1['a'])
+# print(s1[['a','b']])
+
+
+import numpy as np
+import pandas as pd
+array = pd.Series([1,2,3,4,5])
+print(array)
+print(array[[0,1,2]])
+
+
