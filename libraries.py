@@ -411,10 +411,137 @@
 # print(s1[['a','b']])
 
 
-import numpy as np
-import pandas as pd
-array = pd.Series([1,2,3,4,5])
-print(array)
-print(array[[0,1,2]])
+# import numpy as np
+# import pandas as pd
+# array = pd.Series([1,2,3,4,5])
+# print(array)
+# print(array[[0,1,2]])
+
+
+# import pandas as pd
+# import numpy as np
+
+# dict = {'a':1,'b':2,'c':3,'d':4,'e':5}
+# s1 = pd.Series(dict)
+# print(s1)
+
+# array = [1,2,3,4,5]
+# s2 = pd.Series(array)
+# print(s2)
+# print(s1[2:])
+# print(s2[2:])
+# print(s1[:2])
+# print(s2[:2])
+
+# assing a vlaue
+
+# import pandas as pd
+# import numpy as np
+# dict = {'a':1,'b':2,'c':3,'d':4,'e':5}
+# s1 = pd.Series(dict)
+# print(s1)
+
+# array = [1,2,3,4,5]
+# s2 = pd.Series(array)
+# print(s2)
+
+# s1['a'] = 100
+# s2[1] = 200
+# print(s1)
+# print(s2)
+
+# -->get values by index
+# import pandas as pd
+# import numpy as np
+# dict = {'a':1,'b':2,'c':3,'d':4}
+# s1 = pd.Series(dict)
+# print(s1.get('b'))
+# s1 = s1 + 3
+# print(s1)
+
+#------------------------------> Data Frame
+# A DataFrame is a two-dimensional labeled data structure in pandas used to store and manipulate data in tabular form.
+
+# import pandas as pd
+# import numpy as np
+# s = pd.DataFrame(columns=['a','b','c','d','e'])
+# print(s)
+# print(s.ndim)
+# print(s.shape)
+# print(type(s))
+
+# import numpy as np
+# import pandas as pd
+
+# s = pd.DataFrame(columns=['a','b','c','d','e'],index=range(1,6))
+# print(s)
+
+# dataframe passing a dict
+# import pandas as pd
+# import numpy as np
+# dict = {'A':[1,2,3,4,5],
+#          'B':[2,3,4,5,6]}
+# print(pd.DataFrame(dict))
+
+# creating a dataframe passing a numpy with datatime index
+
+# import pandas as pd
+# dates = pd.date_range("2025-01-01", periods=5)
+# df = pd.DataFrame({"Sales": [10, 20, 30, 40, 50]}, index=dates)
+# print(df)
+
+# import pandas as pd
+# import numpy as np
+# dict = {'a':1,'b':2,'c':3,'d':4,'e':5}
+# print(pd.DataFrame([dict]))
+
+# import pandas as pd
+# import numpy as np
+
+# dict = pd.DataFrame({'A':np.random.randn(10),
+#                      'B':np.random.randn(10),
+#                      'C':np.random.randn(10)})[]
+# print(dict)
+# # if we won't first three rows
+# print(dict.head(3))
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame({'A':np.random.randn(10),
+#                    'B':np.random.randn(10),
+#                    'C':np.random.randn(10)})
+# print(df.tail(3))
+
+
+# get the data frame index
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame({'A':np.random.randn(10),
+#                    'B':np.random.randn(10),
+#                    'C':np.random.randn(10)})
+# print(df)
+# print(df.index)
+
+# get the data frame columns
+# import pandas as pd
+# import numpy as np
+# df=pd.DataFrame({'A':np.random.randn(10),
+#                  'B':np.random.randn(10),
+#                  'C':np.random.randn(10)})
+# print(df.columns)
+
+# get the data frame values
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame({'A':np.random.randn(10),
+#                    'B':np.random.randn(10),
+#                    'C':np.random.randn(10)})
+# print(df.values)
+
+# ------> import data frame csv file
+
+
+
+
+
 
 
