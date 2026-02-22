@@ -539,6 +539,79 @@
 
 # ------> import data frame csv file
 
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv",usecols=[0,1],nrows=10)
+# print(df)
+
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv",usecols=[0,1])
+# print(df.head())
+# print(df.shape)
+
+# selecting a single columns
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.head(5))
+# print(df.shape)
+# close = df['x']
+# print(close.head(5))
+
+# selecting multiple columns 
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# closeval = df[['x','y']]
+# print(closeval.head())
+
+#selecting rows via 
+# ----> we can select a set of rows by index
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df[10:15])
+
+# ----> we can select a set of rows and columns
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df[10:15][['x','y']])
+
+#----> selecting via .loc[] (by lable)
+# Uses row labels (index names) and column names
+# Use .loc when you know column names or conditions
+
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.loc[10:15,['x','y']])
+
+# selecting via .iloc[] (by position)
+# Uses row numbers (0,1,2...) and column positions
+# Use .iloc when you want row/column by position
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.iloc[10:15])
+
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.iloc[10:15,[0,1]])
+
+import pandas as pd
+import numpy as np
+df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+print(df)
+print(df[df.x>100])
+print(df[(df['x']>50) | (df['x']<100)])
+      
+
+
+
+
 
 
 
