@@ -482,15 +482,15 @@
 # else:
 #     print("it is not a number :")
 
-num1 = int(input("Enter your number 1 :"))
-num2 = int(input("Etner your number 2 :"))
-num3 = int(input("Enter your number 3 :"))
-if(num1 > num2 and num1 > num3):
-     print("num1 is grater :",num1)
-elif(num2 > num1 and num2 > num3):
-     print("num2 is grater :",num2)
-else:
-     print("num3 is grater :",num3)
+# num1 = int(input("Enter your number 1 :"))
+# num2 = int(input("Etner your number 2 :"))
+# num3 = int(input("Enter your number 3 :"))
+# if(num1 > num2 and num1 > num3):
+#      print("num1 is grater :",num1)
+# elif(num2 > num1 and num2 > num3):
+#      print("num2 is grater :",num2)
+# else:
+#      print("num3 is grater :",num3)
 
 # n = int(input("Enter your values :"))
 # if (n % 2 == 0):
@@ -501,3 +501,57 @@ else:
 # n = int(input("Etner your numebr :"))
 # if(n % 2 != 0):
 #     print("odd number :",n)
+
+# while loop 
+#---->
+# n = int(input("Enter your number :"))
+# a,b = 0,1
+# while n > 0:
+#     print(a)
+#     c = a+b
+#     a = b
+#     b = c
+#     n -= 1
+
+# n = int(input("Enter your numberr :"))
+# i = 1
+# while i<=n:
+#     print("*"*n)
+#     i = i+1
+
+# n = int(input("Enter your number :"))
+# i = 1
+# while i <=n:
+#     print("*"*i+" " *(n-1))
+#     i = i + 1
+
+# n = int(input("Enter your number :"))
+# i = 1
+# while i <=n:
+#     print(" " *(n-i) + "*" * i)
+#     i = i + 1
+
+
+# n = int(input("Enter your number :"))
+# i = 1
+# while i <=n:
+#     print(' ' * (n-i) + "*" * i)
+#     i = i + 1
+
+# n = int(input("Enter your number :"))
+# i = 0
+# while i < n:
+#     print('*' * (n-i) + ' ' * i)
+#     i = i + 1
+
+# n = int(input("Etner your number :"))
+# i =0 
+# while i < n:
+#     print(' ' * i + '*' * (n-i))
+#     i = i + 1
+
+n = int(input("Enter your number :"))
+i = 0
+while i < n:
+    print(' '*i +'* '*(n-i))
+    i = i+ 1

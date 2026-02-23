@@ -601,12 +601,151 @@
 # df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
 # print(df.iloc[10:15,[0,1]])
 
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df)
+# print(df[df.x>100])
+# print(df[(df['x']>50) | (df['x']<100)])
+
+# ------------- manipulation a data frame 
+# --> transpose using 
+# the pandas data frame treanspose function T allows us to transpose function the row as columns and logically the columns as row
+
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# df2 = df[10:15][['x','y']]
+# print(df2.T)
+
+# -- the sort_index method
+#df.sort_index() is used to sort a pandas DataFrame by its index (row labels or column labels).
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.sort_index())
+
+# -- the sort_values() method 
+# --->sort_values() is used to sort a DataFrame based on column values, not index.
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df.sort_values(by='y'))
+
+# import pandas as pd
+# import numpy as np
+# df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
+# print(df)
+# print(df.sort_values(['x','y']))
+
+# the reindex() function 
+# --> we wont to reindex row and columns
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5),index=['a','b','c','d','e'])
+# print(df)
+
+# print(df.reindex(['a','b','c','e','d']))
+
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5))
+# print(df)
+# print(df.reindex([4,3,2,1,0]))
+
+# -----> adding new columns 
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5))
+# print(df)
+# df['new'] = 21
+# print(df)
+
+
+# ------> delete an existing columns 
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4))
+# print(df)
+# del df[0]
+# print(df)
+
+# - the .at() (by label)
+# -->In pandas, .at() is used to access or set a single value in a DataFrame very fast
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4))
+# print(df)
+# print(df.at[0,0])
+
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# print(df.at['a','A'])
+# df.at['a','A'] = 0
+# print(df)
+
+# ----> the .iat()
+# ---->In pandas, .iat() is used to get or set ONE single value from a DataFrame using integer position (row & column numbers).
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4))
+# print(df)
+# print(df.iat[0,0])
+
+# statistical exploratary data analysis (EDA)
+
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# print(df.info())
+
+# ----> the describe() function 
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# print(df.describe())
+
+# ----> value.count()
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# print(df['A'].value_counts())
+
+# ----> the mean() function 
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df.mean(axis=0)) # by columns
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df.mean(axis=1)) # by row
+
+# ----> the std() function 
+# ----> .std() returns how much the values spread out from the mean (average).
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df['A'].std()) # by columns 
+
 import pandas as pd
 import numpy as np
-df = pd.read_csv(r"C:\Users\imrat\OneDrive\Desktop\data_science_all_uses_items\test.csv")
-print(df)
-print(df[df.x>100])
-print(df[(df['x']>50) | (df['x']<100)])
+df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+print(df['A'].std(axis=0))
+
+
+
+
+
+
+
+
+
       
 
 
