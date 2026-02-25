@@ -733,10 +733,97 @@
 # df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
 # print(df['A'].std()) # by columns 
 
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df['A'].std(axis=0))
+
+# ----> filtring pandas data frame
+#Filtering in a Pandas DataFrame is the process of selecting specific rows and/or columns from a DataFrame based on given conditions or criteria.
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# df_f1 = df[df['A'] > 0]
+# print(df_f1)
+
+# ----> we also create multiple condition
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# df_filter=df[(df['A'] > 0)]
+# print(df_filter)
+
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# df_filter = df[(df['A'] > 0) & (df['B'] > 0)]
+# print(df_filter)
+
+# ----> iterating pandas DataFrame
+# iterrows() is used to iterate over DataFrame rows, returning index and row data as a Series.
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df)
+# for item in df.iterrows():
+#     print(item)
+
+# ----> merge append and concat pandas data frame
+# To combine related data stored in different DataFrames
+# To match rows using a common key (like id, roll_no, etc.)
+#The merge() function in Pandas is used to combine two DataFrames by matching rows based on one or more common columns (keys).
+# import pandas as pd
+# df1 = pd.DataFrame({
+#     'id': [1, 2, 3],
+#     'name': ['Aman', 'Ravi', 'Neha']
+# })
+# df2 = pd.DataFrame({
+#     'id': [2, 3, 4],
+#     'marks': [85, 90, 88]
+# })
+# result = pd.merge(df1, df2, on='id')
+# print(result)
+
+# import pandas as pd
+# import numpy as np
+# df1 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df1)
+# print("DataFrame : 1")
+# df2 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df2)
+# print("dataFrame : 2")
+# df3 = pd.merge(df1,df2)
+# print(df3)
+# print("dataFrame : 3")
+
+# concat function
+#concat allows us to merge two data frmae by rows and columns 
+# it by default rows
+# import pandas as pd
+# import numpy as np
+# df1 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df1)
+
+# df2 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+# print(df2)
+
+# df3 = pd.concat([df1,df2])
+# print(df3)
+
+#---> for columns
 import pandas as pd
 import numpy as np
-df = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
-print(df['A'].std(axis=0))
+df1 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+print(df1)
+df2 = pd.DataFrame(np.random.randn(5,4),index=['a','b','c','d','e'],columns=['A','B','C','D'])
+print(df2)
+
+df3 = pd.concat([df1,df2],axis=1)
+print(df3)
+
+
 
 
 
