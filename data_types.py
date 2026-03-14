@@ -555,3 +555,6 @@
 # while i < n:
 #     print(' '*i +'* '*(n-i))
 #     i = i+ 1
+
+
+# ---> for loop 

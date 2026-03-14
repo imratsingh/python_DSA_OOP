@@ -126,12 +126,21 @@
 # A C 
 # A C E 
 # A C E G 
-# A C E G H 
+# A C E G i 
 
-n = int(input("Enter your number :"))
+# n = int(input("Enter your number :"))
+# for i in range(1,n+1):
+#     ch = "A"
+#     for j in range(1,i+1):
+#         print(ch,end=" ")
+#         ch = chr(ord(ch)+2)
+#     print()
+
+
+n= int(input("enter your number :"))
 for i in range(1,n+1):
-    ch = "A"
-    for j in range(1,i+1):
+    ch="A"
+    for j in range(1,n+1):
         print(ch,end=" ")
-        ch = chr(ord(ch)+2)
+        ch = chr(ord(ch)+1)
     print()
